@@ -1,27 +1,24 @@
 
-"""
 
-# === Imports ===
+
+
 from datetime import date
 
-# === Constants ===
-CURRENT_YEAR = date.today().year  # Get current year from system as integer
 
 
-# === Main Function ===
 def main() -> None:
-    """Run the name-age program."""
+"""Run the name-age program."""
+   name = input("What is your name: ")
+   age = int(input("How old are you: "))
 
-    
-# Get user input.
-name = input("Enter your name: ")
-age = int(input("Enter your age: "))
+  current_year = date.today().year
+  birth_year = current_year - age
 
-# Calculate user's approximate birth year.
-birth_year = CURRENT_YEAR - age
 
-# Output personalized message with user's name and birth year.
-print(f"{name}, you were born in {birth_year}.")
+  print(f"\nHello {name}! You were born in {birth_year}.")
+
+if __name__ == "__main__":
+  main()
   
     
 
