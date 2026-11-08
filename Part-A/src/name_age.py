@@ -1,28 +1,11 @@
-
 from datetime import date
 
+name = input("What is your name? ")
 
-def main() -> None:
-    """Run the name-age program."""
-    name = input("Enter your name: ")
-    age = int(input("Enter your age: "))
+age = int(input("How old are you? "))
 
-    current_year = date.today().year
-    birth_year = current_year - age
+current_year = date.today().year
 
-    print(f"\nHello {name}! You were born in {birth_year}.")
+birth_year = current_year - age
 
-
-if __name__ == "__main__":
-    main()
-
-
-
-  
-    
-
-
-   
-
-
-
+print(f"Hello {name}! You were born in {birth_year}.")
